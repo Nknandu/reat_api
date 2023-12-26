@@ -26,7 +26,6 @@ const About = () => {
                     <h2>About</h2>
                     <p>
                         {content ? content.content_data.content : "Loading..."}
-                        {/* {content.content_data.content} ? {content.content_data.content} : 'Nandakumar' */}
                     </p>
                 </div>
                 <div class="row">

@@ -1,11 +1,11 @@
 import React from "react";
 
-const Hero = (user) => {
-   console.log(user);
+const Hero = (user_data) => {
+    console.log(user_data);
     return (
         <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
             <div class="hero-container" data-aos="fade-in">
-                <h1>Name</h1>
+                <h1>{user_data.user_temp.name}</h1>
                 <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span>'</p>
             </div>
         </section>

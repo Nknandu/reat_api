@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Hero from "./Hero";
 
 const Header = () => {
-
+   
     const [user, setUser] = useState({});
     useEffect(() => {
         const fetchUser = async () => {
@@ -31,10 +30,10 @@ const Header = () => {
             <div class="d-flex flex-column">
                 <div class="profile">
                     <img src="/assets/img/profile-img.jpg" class="img-fluid rounded-circle" alt="Description" />
-                    <Hero user={user} />
+                    {/* <Hero user={user_temp} /> */}
 
                     {/* <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle"> */}
-                    <h1 class="text-light"><a href="index.html"> {user ? user.user_data.name : ''}</a></h1>
+                    <h1 class="text-light"><a href="index.html">Nandakumar</a></h1>
                     <div class="social-links mt-3 text-center">
                         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
